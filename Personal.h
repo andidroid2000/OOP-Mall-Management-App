@@ -5,13 +5,13 @@
 class Personal
 {
 protected:
-	std::string denumire_funtie, nume, prenume;
+	std::string denumire_functie, nume, prenume;
 	int an_angajare;
 	float salariu;
 public:
 	Personal()
 	{
-		denumire_funtie = "";
+		denumire_functie = "";
 		nume = "";
 		prenume = "";
 		an_angajare = 0;
@@ -29,14 +29,14 @@ public:
 	{
 		std::cout << "Nume angajat: " << this->nume << "\n";
 		std::cout << "Prenume angajat: " << this->prenume << "\n";
-		std::cout << "Functie ocupata: " << this->denumire_funtie << "\n";
+		std::cout << "Functie ocupata: " << this->denumire_functie << "\n";
 		std::cout << "An angajare: " << this->an_angajare << "\n";
 		std::cout << "Salariu: " << this->salariu << " lei\n\n";
 	}
 
 	std::string getDenumire_functie()
 	{
-		return denumire_funtie;
+		return denumire_functie;
 	}
 
 	std::string getNume()
