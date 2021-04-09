@@ -3,13 +3,13 @@
 
 Vanzator::Vanzator(std::string nume, std::string prenume, int an_angajare) : Personal(nume, prenume, an_angajare)
 {
-    this->denumire_funtie = "Vanzator";
+    this->denumire_functie = "Vanzator";
     this->salariu = 1500;
 }
 
 Vanzator::~Vanzator()
 {
-    denumire_funtie = "";
+    denumire_functie = "";
     nume = "";
     prenume = "";
     an_angajare = 0;
@@ -18,12 +18,12 @@ Vanzator::~Vanzator()
 
 Paznic::Paznic(std::string nume, std::string prenume, int an_angajare) : Personal(nume, prenume, an_angajare)
 {
-    this->denumire_funtie = "Paznic";
+    this->denumire_functie = "Paznic";
     this->salariu = 1400;
 }
 
 Paznic::~Paznic() {
-    denumire_funtie = "";
+    denumire_functie = "";
     nume = "";
     prenume = "";
     an_angajare = 0;
@@ -32,13 +32,13 @@ Paznic::~Paznic() {
 
 Manager::Manager(std::string nume, std::string prenume, int an_angajare) : Personal(nume, prenume, an_angajare)
 {
-    this->denumire_funtie = "Manager";
+    this->denumire_functie = "Manager";
     this->salariu = 1900;
 }
 
 Manager::~Manager()
 {
-    denumire_funtie = "";
+    denumire_functie = "";
     nume = "";
     prenume = "";
     an_angajare = 0;
