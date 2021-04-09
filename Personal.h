@@ -58,7 +58,7 @@ public:
 	{
 		return salariu;
 	}
-	float setSalariu(float salariu_nou)
+	void setSalariu(float salariu_nou)
 	{
 		this->salariu = salariu_nou;
 	}
