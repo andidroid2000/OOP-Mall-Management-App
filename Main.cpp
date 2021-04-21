@@ -9,14 +9,24 @@ int main()
     restaurant1.afisare();
     Moda moda("H&M", 0, 2021, 0);
     std::cout << moda;
-    Manager manager1("Toader", "Andi", 2015);
+    Manager manager1("George", "Georgel", 2015);
     manager1.afisare_personal();
     manager1.ajustari_salariu();
 
      Mall mall(2, 3);
      mall.adaugare_magazin(restaurant1);
      mall.adaugare_magazin(moda);
-     mall.adaugare_angajati(manager1);
+
+     try
+     {
+         mall.adaugare_angajati(manager1);
+     }
+     catch ( std::bad_alloc& exceptie )
+     {
+         std::cerr << "Avem o exceptie: " << exceptie.what() << std::endl;
+     }
+    
+
      mall.afisare_locatii();
      mall.afisare_angajati();
   
