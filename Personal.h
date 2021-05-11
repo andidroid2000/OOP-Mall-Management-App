@@ -63,4 +63,6 @@ public:
 		this->salariu = salariu_nou;
 	}
 	virtual void ajustari_salariu() = 0;
+
+	virtual void verificare_an() = 0;
 };

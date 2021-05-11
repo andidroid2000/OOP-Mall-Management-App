@@ -46,8 +46,6 @@ public:
 		Manager* man;
 
 		man = new Manager(angajat);
-		if (man == nullptr)
-			throw std::bad_alloc();
 
 		angajati.push_back(man);
 		//angajati[this->numar_angajati++] = new Manager(angajat);
