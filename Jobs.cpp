@@ -1,5 +1,5 @@
 #include "Jobs.h"
-
+#include "PerioadaProba.h"
 
 Vanzator::Vanzator(std::string nume, std::string prenume, int an_angajare) : Personal(nume, prenume, an_angajare)
 {
@@ -89,4 +89,20 @@ void Manager::ajustari_salariu()
         this->salariu *= 1.75;
     std::cout << "Salariul a fost marit!\n";
     std::cout << "Noul salariu este: " << this->salariu << " lei!\n\n";
+}
+
+void Vanzator::verificare_an()
+{
+    if (this->an_angajare > 2020)
+        throw PerioadaProba();
+}
+void Paznic::verificare_an()
+{
+    if (this->an_angajare > 2020)
+        throw PerioadaProba();
+}
+void Manager::verificare_an()
+{
+    if (this->an_angajare > 2020)
+        throw PerioadaProba();
 }
