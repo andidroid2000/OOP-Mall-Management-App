@@ -1,6 +1,6 @@
 #include "Magazine.h"
 #include <exception>
-#include <string.h>
+#include <string>
 
 Restaurant::Restaurant()
 {

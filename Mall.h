@@ -23,10 +23,12 @@ public:
 
 	~Mall()
 	{
+		for (int i = 0; i < angajati.size(); i++)
+			delete angajati[i];
+		for (int i = 0; i < locatii.size(); i++)
+			delete locatii[i];
 		numar_locatii = 0;
 		numar_angajati = 0;
-		//delete[]locatii;
-		//delete[]angajati;
 	}
 
 	void adaugare_magazin(Restaurant locatie)
