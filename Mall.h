@@ -31,13 +31,17 @@ public:
 
 	void adaugare_magazin(Restaurant locatie)
 	{
-		locatii.push_back(new Restaurant(locatie));
+		Restaurant* rest;
+		rest = new Restaurant(locatie);
+		locatii.push_back(rest);
 		//locatii[this->numar_locatii++] =;
 	}
 
 	void adaugare_magazin(Moda locatie)
 	{
-		locatii.push_back(new Moda(locatie));
+		Moda* magazin;
+		magazin = new Moda(locatie);
+		locatii.push_back(magazin);
 		//locatii[this->numar_locatii++] = new Moda(locatie);
 	}
 
@@ -46,7 +50,6 @@ public:
 		Manager* man;
 
 		man = new Manager(angajat);
-
 		angajati.push_back(man);
 		//angajati[this->numar_angajati++] = new Manager(angajat);
 	}
