@@ -1,4 +1,6 @@
 #include "Magazine.h"
+#include <exception>
+#include <string.h>
 
 Restaurant::Restaurant()
 {
@@ -10,6 +12,8 @@ Restaurant::Restaurant()
 }
 Restaurant::Restaurant(std::string denumire, int etaj, int an_deschidere, int ani_activitate) : SpatiuComercial(denumire, etaj, an_deschidere, ani_activitate)
 {
+    if (this->denumire.length() == 0)
+        throw std::invalid_argument("\t[Eroare] Restaurant - Denumire incompleta;\n");
     this->tip_magazin = "Restaurant";
     this->etaj = 1;
 }
@@ -87,6 +91,8 @@ Moda::Moda(std::string denumire, int etaj, int an_deschidere, int ani_activitate
     {
         this->etaj = 2;
     }
+    if (this->denumire.length() == 0)
+        throw std::invalid_argument("\t[Eroare] Moda - Denumire incompleta;\n");
 }
 
 Moda::~Moda()
