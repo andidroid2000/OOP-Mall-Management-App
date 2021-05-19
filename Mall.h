@@ -70,18 +70,20 @@ public:
 
 	void afisare_locatii()
 	{
+		std::cout << "======================================================<< Locatii >>==========================================================\n";
 		for (int i = 0; i < locatii.size(); i++)
 		{
-			//std::cout << locatii[i] << "\n\n";
+			std::cout << "\tSpatiu comercial " << i + 1 << ": ";
 			locatii[i]->afisare();
 		}
 	}
 
 	void afisare_angajati()
 	{
+		std::cout << "======================================================<< Angajati >>=========================================================\n";
 		for (int i = 0; i < angajati.size(); i++)
 		{
-			//std::cout << angajati[i] << "\n\n";
+			std::cout << "Angajat " << i + 1<<": ";
 			angajati[i]->afisare_personal();
 		}
 	}

@@ -7,6 +7,7 @@ int main()
 {
 
     try {
+        std::cout << "================================================<< Centru comercial 1 >>====================================================\n";
         Moda magazin1("H&M", 0, 2021, 0), magazin2("New Yorker", 0, 2000, 1);
         Restaurant restaurant1("KFC", 1, 2020, 1), restaurant2("Chopstix", 1, 2021, 0), restaurant3("McDonald's", 1, 2015, 6);
         Manager manager1("George", "Georgel", 2015);
@@ -22,9 +23,9 @@ int main()
         mall.adaugare_magazin(restaurant1);
         mall.adaugare_magazin(restaurant2);
         mall.adaugare_magazin(restaurant3);
-        std::cout << "====================================================<< Locatii >>========================================================\n";
+        mall.adaugare_angajati(manager1);
+        mall.adaugare_angajati(vanzator1);
         mall.afisare_locatii();
-        std::cout << "======================================================<< Angajati >>=========================================================\n";
         mall.afisare_angajati();
     }
     catch(std::invalid_argument& error)
